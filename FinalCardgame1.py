@@ -74,8 +74,6 @@ print(deck)
 
 # This method is used to store the score assigned with each card in a dictionary. We will call the calculate_score(card)
 # method from here for each card of the deck and store the card as key and its associated score as value in the dictionary.
-# Use the first element of the "card" list as key for the dictionary. Dictionary entries will look like this: '2 of Clubs': 3
-# and 'Jack of Diamonds': 13.
 
 storing_dic= {}
 
@@ -109,7 +107,7 @@ print(deck)
 # This method is used for distributing the cards of the shuffled deck to player1 and player2. Hand out the first ten cards
 # in an alternating way to the decks of the players, i.e. player1 gets the cards with indices 0,2,4,6,8 and player2
 # gets the cards with indices 1,3,5,7,9.
-# Hint: use the modulus function '%' to determine whether the current list index is odd or even.
+
     
 deck_player1 =[] #Creating empty lists first, so I can distribute the shuffled cards to them individually 
 deck_player2 =[]
@@ -143,7 +141,6 @@ print("the lenght of player1's deck is :",len(deck_player1))
 # 1 means player 1 won, 2 means player 2, 0 means tie. Also, print the result of a round on the console in the form:
 # Player 1: 5 of Clubs, score=6
 # Player 2: Jack of Hearts, score=14
-# Hint: use the format() function for strings to create the output strings..
 
 card1= deck_player1[0]
 card2= deck_player2[0]
@@ -190,19 +187,7 @@ def play_round(card1,card2,storing_dic):
 
 
 
-# This method is used for simulating a complete game consisting of playing all the cards on player1 and player2's decks,
-# i.e. 1 card each in 5 rounds. Call the play_round() function for each round with card1, card2 and the score dictionary
-# as input. Use the returned value of th play_round() function to evaluate the result of one round. Print if Player 1 or Player 2
-# won the round or there was a Tie on the console.
-# Also, keep track of the number of of wins for player 1, player 2 and ties. Similarly to playing one round, return
-# the total result of the game, with total=1 meaning that player 1 has won, total=2 meaning that player 2 has won,
-# and total=0 meaning nobody has won.
-# Print the result of a complete game on the console in the form:
-# The total score is: Player 1: 2, Player 2: 3, Ties: 0
-# Player 2 wins the game.
-# Hint: use the format() function to create the output strings.te the output strings.
-
-
+# This method is used for simulating a complete game consisting of playing all the cards on player1 and player2's decks
 
 
 def play_game (deck_player1, deck_player2,storing_dic):
